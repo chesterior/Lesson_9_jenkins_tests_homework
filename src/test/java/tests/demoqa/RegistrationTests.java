@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class RegistrationTests extends TestBase {
+public class RegistrationTests {
 
     @Test
     void fillPracticeForm() {
@@ -31,6 +31,8 @@ public class RegistrationTests extends TestBase {
         $("#react-select-3-input").setValue("Haryana").pressEnter();
         $("#city").click();
         $("#react-select-4-input").setValue("Panipat").pressEnter();
+
+        $("#submit").click();
 
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         $(".table-responsive").$(byText("Student Name"))
