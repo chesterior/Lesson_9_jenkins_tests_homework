@@ -21,7 +21,7 @@ public class RegistrationTests extends TestBase {
         $("#userNumber").setValue("1234567891");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").find(byText("July")).click();
-        $(".react-datepicker__year-select").find(byText("1500")).click();
+        $(".react-datepicker__year-select").find(byText("1900")).click();
         $(".react-datepicker__day--013").click();
         $("#subjectsInput").setValue("Maths").pressEnter();
         $("#hobbiesWrapper").find(byText("Reading")).click();
