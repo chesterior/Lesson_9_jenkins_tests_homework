@@ -32,8 +32,6 @@ public class RegistrationTests extends TestBase {
         $("#city").click();
         $("#react-select-4-input").setValue("Panipat").pressEnter();
 
-        $("#submit").click();
-
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         $(".table-responsive").$(byText("Student Name"))
                 .parent().shouldHave(text("Robin Hood"));
